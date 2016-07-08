@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>icon</title>
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/icon.css">
+
+	<style>
+		
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="iconfont icon_hand shadow"></li>
+		<li class="iconfont "><div class="icon_reload reload"></div></li>
+		<li class="iconfont icon_love love"></li>
+		<div class="clear"></div>
+	</ul>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script>
+	$(".love").click(function(){
+		var $this=$(this);
+		$this.addClass("active");
+		setTimeout(function(){
+			$this.removeClass("active")
+		},500)
+	})
+	</script>
+</body>
+</html>
